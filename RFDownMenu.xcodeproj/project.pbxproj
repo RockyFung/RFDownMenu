@@ -14,6 +14,7 @@
 		5C0245F62272E6370040BC43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C0245F42272E6370040BC43 /* LaunchScreen.storyboard */; };
 		5C0246012272E6370040BC43 /* RFDownMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0246002272E6370040BC43 /* RFDownMenuTests.swift */; };
 		5C02460C2272E6380040BC43 /* RFDownMenuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C02460B2272E6380040BC43 /* RFDownMenuUITests.swift */; };
+		5C02461A2272E68F0040BC43 /* RFDownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0246192272E68F0040BC43 /* RFDownMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		5C0246072272E6370040BC43 /* RFDownMenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RFDownMenuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C02460B2272E6380040BC43 /* RFDownMenuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RFDownMenuUITests.swift; sourceTree = "<group>"; };
 		5C02460D2272E6380040BC43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C0246192272E68F0040BC43 /* RFDownMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RFDownMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				5C0245EB2272E6350040BC43 /* AppDelegate.swift */,
 				5C0245ED2272E6350040BC43 /* ViewController.swift */,
+				5C0246192272E68F0040BC43 /* RFDownMenu.swift */,
 				5C0245EF2272E6350040BC43 /* Main.storyboard */,
 				5C0245F22272E6370040BC43 /* Assets.xcassets */,
 				5C0245F42272E6370040BC43 /* LaunchScreen.storyboard */,
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C02461A2272E68F0040BC43 /* RFDownMenu.swift in Sources */,
 				5C0245EE2272E6350040BC43 /* ViewController.swift in Sources */,
 				5C0245EC2272E6350040BC43 /* AppDelegate.swift in Sources */,
 			);
