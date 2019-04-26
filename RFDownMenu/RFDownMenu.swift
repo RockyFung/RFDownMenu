@@ -53,7 +53,7 @@ class RFDownMenu: UIView {
         let clickIndex = btnArray.index(of:btn)!
         
         if currentBtn == btn {
-            showItemViewTag(show: needShow, view: itemViews[clickIndex])
+            showItemViewTag(view: itemViews[clickIndex])
             return
         }
         
@@ -63,12 +63,12 @@ class RFDownMenu: UIView {
         
         needShow = true
         let currentView = itemViews[clickIndex]
-        showItemViewTag(show: needShow, view: currentView)
+        showItemViewTag(view: currentView)
         currentBtn = btn
     }
 
-    func showItemViewTag(show:Bool, view:UIView){
-        if  show {
+    func showItemViewTag(view:UIView){
+        if  self.needShow {
             self.superview?.addSubview(blackBg)
             self.superview?.addSubview(view)
             self.superview?.bringSubviewToFront(self)
