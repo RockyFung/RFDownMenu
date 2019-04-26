@@ -9,16 +9,8 @@
 import UIKit
 
 class RFDownMenu: UIView {
-    lazy var blackBg:UIView={
-        let v = UIButton(frame: UIScreen.main.bounds)
-        v.backgroundColor = .black
-        v.alpha = 0.3
-        v.addTarget(self, action: #selector(closeItemView), for: .touchUpInside)
-        return v
-    }()
-
-    var needShow=true
-    var btnArray = [UIButton]()
+    private var needShow=true
+    private var btnArray = [UIButton]()
     var currentBtn:UIButton?
     var itemViews = [UIView]()
     var titles:[String]!{
@@ -26,6 +18,14 @@ class RFDownMenu: UIView {
             setTitleBtns()
         }
     }
+    
+    lazy var blackBg:UIView={
+        let v = UIButton(frame: UIScreen.main.bounds)
+        v.backgroundColor = .black
+        v.alpha = 0.3
+        v.addTarget(self, action: #selector(closeItemView), for: .touchUpInside)
+        return v
+    }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
